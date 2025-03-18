@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 14px;
+    text-align: center;
+    background-color: #f0f0f0;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game-container, .second-screen {
+    text-align: center;
+}
+
+.cat {
+    font-size: 4rem;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.message {
+    cursor: pointer;
+    padding: 10px;
+    border: 2px solid #333;
+    border-radius: 5px;
+    margin: 10px;
+    display: inline-block;
+}
+
+.second-screen {
+    display: none; /* Hide second screen initially */
+}
+
+.final-message {
+    font-size: 16px;
+    color: #ff4081;
+}
+
+/* Make the cat bounce up and down */
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+#happy-cat {
+    font-size: 4rem;
+    animation: bounce 1s infinite ease-in-out;
+}
